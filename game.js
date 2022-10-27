@@ -77,3 +77,22 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+
+// dark mode functionality.
+$(".theme").on("click",()=>{
+var n = document.querySelector(".theme").classList.length;
+if(n === 1){
+  var button = document.querySelector(".theme");
+  button.innerHTML= '<i class="fa-sharp fa-solid fa-sun fa-2x"></i>';
+  // button.innerHTML= '<i class="fa-solid fa-moon fa-2x"></i>';
+  button.classList.add("dark")
+  $(".stylesheet").attr("href","dark.css")
+}
+else{
+  var button = document.querySelector(".theme");
+  button.classList.remove("dark")
+  button.innerHTML= '<i class="fa-solid fa-moon fa-2x"></i>';
+  // button.innerHTML= '<i class="fa-sharp fa-solid fa-sun fa-2x"></i>';
+  $(".stylesheet").attr("href","styles.css")
+}
+});

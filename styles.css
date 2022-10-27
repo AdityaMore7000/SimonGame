@@ -1,13 +1,13 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: wheat;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color:blue;
 }
 
 .container {
@@ -50,4 +50,13 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.themeBtn{
+  position: absolute;
+  right: 1.5rem;
+  top:1rem;
+  border-radius: 100%;
+  color: teal;
+  transition: all 0.2s;
 }
